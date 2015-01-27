@@ -1,13 +1,16 @@
 Watchkeeper-old
+
 ------ ASSUMPTIONS ------
 
 you are installing on ubuntu server LTS 12.04
 postgresql is setup with postgis extension for database 'securitynews'
+
 ------ DATABASE SETUP -------
 
 See here:
 
 https://github.com/mkhanimmap/watchkeeper-old/blob/master/Database/WatchKeeper.backup
+
 ------ iNSTALLATION ------
 
 Prepare the system
@@ -35,6 +38,7 @@ Get the code
 cd /var/www
 sudo apt-get install git
 sudo git clone https://github.com/mkhanimmap/watchkeeper-old.git
+
 ------ CONFIGURATION ------
 
 Set your postgis server connection string here
@@ -44,6 +48,7 @@ sudo vi /var/www/watchkeepernew/immap-sms/includes/config.php
 Configure the GSM SMS Package
 
 sudo vi /var/www/watchkeepernew/immap-sms/cron/cron-functions.php
+
 ------ Cron Job / Task Scheduler ------
 
 Install Cron Job
